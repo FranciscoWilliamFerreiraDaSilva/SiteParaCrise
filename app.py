@@ -91,6 +91,7 @@ html_template = """
             bottom: 10px;
             right: 10px;
             opacity: 0.2;
+            width: 32%;
         }
 
         /* Modal escondido por padrão */
@@ -293,15 +294,15 @@ def montar_resultado(form_data: dict) -> str:
     somente se tiver conteúdo.
     """
     campos_simples = [
-        ("Incidente", "incidente"),
-        ("Times Envolvidos", "times"),
-        ("Gestor de Crise", "gestor"),
-        ("Prazo estimado para resolução", "prazo"),
-        ("Área do acionamento", "area"),
-        ("Detalhe da Falha", "falha"),
-        ("Impacto", "impacto"),
-        ("Data/Horário de início", "inicio"),
-        ("Data/Horário do fim", "fim"),
+        ("⚠️Incidente", "incidente"),
+        ("🔴Times Envolvidos", "times"),
+        ("🟢Gestor de Crise", "gestor"),
+        ("🕐Prazo estimado para resolução", "prazo"),
+        ("🔉Área do acionamento", "area"),
+        ("📍Detalhe da Falha", "falha"),
+        ("‼️Impacto", "impacto"),
+        ("📅Data/Horário de início", "inicio"),
+        ("📅Data/Horário do fim", "fim"),
     ]
 
     partes = ["🚨 *SALA DE CRISE*"]
